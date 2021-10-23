@@ -5,7 +5,7 @@ const Form = ({formType}) => {
     return (
         <form className="border-2 p-4 gap-2 border-blue-500 rounded-lg flex items-center flex-col">
             <div className="flex gap-4 items-center">
-                <label htmlFor="username" className="text-2xl ">username</label>
+                <label htmlFor="username" className="text-2xl ">Username</label>
                 <input type="text" name="username" id="username" className="rounded-md"/> 
             </div>
             <div className="flex gap-4 items-center">
