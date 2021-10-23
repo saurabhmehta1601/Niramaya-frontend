@@ -2,8 +2,8 @@ import React from 'react'
 import Form from "../components/Form"
 const Login = () => {
     return (
-        <div>
-            <Form formType="register"/>
+        <div className="h-96">
+            <Form formType="login" onSubmit={()=> {alert("login")}}/>
         </div>
     )
 }
