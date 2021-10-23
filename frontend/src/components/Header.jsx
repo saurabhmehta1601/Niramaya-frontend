@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <div>
+        <div className="mb-6">
             {/* icon for hospital */}
             <div className="flex items-end h-24">
             <img src="/icon92.png" alt="niramaya-logo" className="h-24 ml-6 mt-4 absolute" />
