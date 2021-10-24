@@ -9,3 +9,34 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.slide img {
+    width:20rem ;
+    margin: 0 auto ;
+}
+
+.slide{
+    transform: scale(0.4) ;
+    transition: transform 300ms ;
+    opacity:0.5 ;
+}
+
+.activeSlide{
+    transform: scale(1.1) ;
+    opacity: 1 ;
+}
+
+.arrow {
+    position:absolute;
+    z-index: 10;
+}
+
+.prev {
+    left:0 ;
+    top:50%;
+}
+
+.next{
+    right:0 ;
+    top:50%;
+}
