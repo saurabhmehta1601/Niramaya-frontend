@@ -14,7 +14,7 @@ const images = [myImg,myImg,myImg,myImg,myImg]
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow next" onClick={onClick}>
-         <img  alt="arrow-right" src="https://img.icons8.com/ios-glyphs/30/000000/circled-chevron-right.png"/> 
+         <img src="https://img.icons8.com/ios-glyphs/30/000000/circled-chevron-right.png"/> 
       </div>
     );
   };
@@ -22,7 +22,7 @@ const images = [myImg,myImg,myImg,myImg,myImg]
   const PrevArrow = ({ onClick }) => {
     return (
       <div className="arrow prev" onClick={onClick}>
-         <img alt="arrow-left" src="https://img.icons8.com/ios-glyphs/30/000000/circled-chevron-left.png"/> 
+         <img src="https://img.icons8.com/ios-glyphs/30/000000/circled-chevron-left.png"/> 
       </div>
     );
   };
@@ -44,11 +44,7 @@ const Carousel = () => {
                 <Slider {...settings}>
                     {images.map((img,idx) => (
                         <div className={idx === activeImgIdx ? "slide activeSlide" : "slide"}>
-<<<<<<< HEAD
-                            <img  src= {img} alt="doctor" />
-=======
-                            <img alt="doctor-logo" src= {img} alt="doctor" />
->>>>>>> d5c9ebbb2e4a5fe02e70f890191b18b806715a3a
+                            <img src= {img} alt="doctor" />
                         </div>
                     ))}
                 </Slider>
