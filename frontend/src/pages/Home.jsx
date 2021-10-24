@@ -1,8 +1,9 @@
 import React from 'react'
+import Carousel from '../components/Carousel'
 import {Link} from "react-router-dom"
 
 const Home = () => {
-    return (
+    return (<>
         <div className="mx-24 py-36  hero-bg-img">
             <div className=" w-1/2   flex flex-col justify-center gap-4">
                     <h2 className="text-4xl font-nunito font-semibold ">Take a step forward as society</h2>
@@ -13,7 +14,9 @@ const Home = () => {
                     </div>
             </div>
         </div>
-    )
+        <h2 className="text-center text-4xl my-12 font-nunito font-bold">Meet our doctors</h2>
+        <Carousel />
+    </>)
 }
 
 export default Home
