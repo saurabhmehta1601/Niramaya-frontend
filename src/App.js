@@ -1,10 +1,5 @@
-import HomePage from "./pages/Home"
-import LoginPage from "./pages/Login"
-import RegisterPage from "./pages/Register"
-import ProfilePage from "./pages/Profile"
-
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import {HomePage,LoginPage , RegisterPage ,ProfilePage } from "./pages/exports"
+import {Header,Footer} from "./components/exports"
 
 import {Switch,Route,BrowserRouter} from "react-router-dom"
 
