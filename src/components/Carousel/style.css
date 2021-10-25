@@ -16,15 +16,14 @@
 
 .arrow {
     position:absolute;
+    top:50%;
     z-index: 10;
 }
 
 .prev {
-    left:0 ;
-    top:50%;
+    left:-15% ;
 }
 
 .next{
-    right:0 ;
-    top:50%;
+    right:-15% ;
 }
