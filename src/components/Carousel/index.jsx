@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {BsArrowLeftCircle,BsArrowLeftCircleFill,BsArrowRightCircle,BsArrowRightCircleFill  } from "react-icons/bs"
 import Slider from "react-slick"
 import "./style.css"
 import myImg from "../../assets/hero-img.png"
@@ -13,19 +14,27 @@ const carouselStyle = {
 const images = [myImg,myImg,myImg,myImg,myImg]
 
   const NextArrow = ({ onClick }) => {
-    return (
-      <div className="arrow next" onClick={onClick}>
-         <img alt="arrow-right" src="https://img.icons8.com/ios-glyphs/30/000000/circled-chevron-right.png"/> 
-      </div>
-    );
+    const [hovered,setHovered] = useState(false) 
+    return ( <div 
+                  onMouseEnter={() =>setHovered(true)} 
+                  onMouseLeave={() => setHovered(false)}>
+                    {hovered ? 
+                    (<BsArrowRightCircleFill className="arrow next text-3xl" onClick={onClick}/>)
+                      : <BsArrowRightCircle className="arrow next text-3xl " onClick={onClick}/>
+                    }
+              </div>);
   };
 
   const PrevArrow = ({ onClick }) => {
-    return (
-      <div className="arrow prev" onClick={onClick}>
-         <img alt="arrow-left" src="https://img.icons8.com/ios-glyphs/30/000000/circled-chevron-left.png"/> 
-      </div>
-    );
+    const [hovered,setHovered] = useState(false) 
+    return ( <div 
+                  onMouseEnter={() =>setHovered(true)} 
+                  onMouseLeave={() => setHovered(false)}>
+                    {hovered ? 
+                    (<BsArrowLeftCircleFill className="arrow prev text-3xl" onClick={onClick}/>)
+                      : <BsArrowLeftCircle className="arrow prev text-3xl " onClick={onClick}/>
+                    }
+              </div>);
   };
 
 const Carousel = () => {
