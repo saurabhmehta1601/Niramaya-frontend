@@ -1,6 +1,7 @@
 import React from 'react'
 import docImg from "../../assets/hero-img.png"
 import {BsFillStarFill} from "react-icons/bs"
+import { FaHospitalSymbol} from "react-icons/fa"
 
 const fakeAppointments = [{
     patient:"Raju Rastogi",
@@ -23,13 +24,18 @@ const Dashboard = () => {
                     <img src={docImg} className="w-36" alt="doctor" />   
                 </div> 
                 {/* doctor biodata section */}
-                <div className=" flex-1 bg-blue-900 p-8 rounded-lg flex">
-                    <h3 className="text-3xl font-bold flex-1">Rajeev Jain</h3>                    
-                    <div className="flex gap-4 mr-8 text-2xl text-yellow-300">
-                        <BsFillStarFill />
-                        <BsFillStarFill />
-                        <BsFillStarFill />
+                <div className=" flex-1 bg-blue-900 p-8 rounded-lg ">
+                    {/* div contains doctor name and rating  */}
+                    <div className="flex">
+                        <h3 className="text-4xl font-bold flex-1">Rajeev Jain</h3>                    
+                        <div className="flex gap-4 mr-8 text-2xl text-yellow-300">
+                            <BsFillStarFill />
+                            <BsFillStarFill />
+                            <BsFillStarFill />
+                        </div>
                     </div>
+                    <h5 className="text-2xl font-semibold  mb-8">MD Psychology</h5>                    
+                    <p className="text-xl font-semibold  flex "> <FaHospitalSymbol className="self-center text-2xl mr-4"/>Psyclologist at Priya Hospital</p>                    
                 </div> 
         </div>
         {/* Appointments section */}
