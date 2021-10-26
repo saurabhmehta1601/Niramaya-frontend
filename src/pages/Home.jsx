@@ -16,6 +16,8 @@ const Home = () => {
         </div>
         <h2 className="text-center text-4xl my-12 font-nunito font-bold">Meet our doctors</h2>
         <Carousel />
+        <h2 className="text-center text-4xl my-12 font-nunito font-bold">See our reviews</h2>
+        <Carousel />
     </>)
 }
 
