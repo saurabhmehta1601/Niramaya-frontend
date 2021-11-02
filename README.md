@@ -4,3 +4,6 @@
 
 ## Introduction
 Niramaya is an online plateform where patients can interact with psychologists for their mental treatment and checkup which is very useful especially in covid times.
+
+## Our Contributors
+You can see our contributors [here](https://saurabhmehta1601.github.io/Niramaya-frontend/)
